@@ -8,18 +8,10 @@ public class CameraSystem : MonoBehaviour
     public Transform player;
     public float xMin;
     public float xMax;
-    public float yMin;
-    public float yMax;
 
-    // Start is called before the first frame update
-    void Start()
+    void LateUpdate()
     {
-
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-
+      float x = Mathf.Clamp(player.transform.position.x, xMin, xMax);
+      gameObject.transform.position = new Vector3(x,gameObject.transform.position.y,gameObject.transform.position.z);
     }
 }
