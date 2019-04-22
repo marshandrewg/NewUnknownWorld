@@ -53,12 +53,14 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-     <Compile Include="Assets\MessageFunctions.cs" />
+     <Compile Include="Assets\Scripts\CaesarDisplayFunction.cs" />
      <Compile Include="Assets\Scripts\CameraSystem.cs" />
      <Compile Include="Assets\Scripts\ChatBoxFunctions.cs" />
      <Compile Include="Assets\Scripts\DragableWindow.cs" />
+     <Compile Include="Assets\Scripts\EnemyMobility.cs" />
      <Compile Include="Assets\Scripts\LevelControl.cs" />
      <Compile Include="Assets\Scripts\MessageFunction.cs" />
+     <Compile Include="Assets\Scripts\NextScreen.cs" />
      <Compile Include="Assets\Scripts\PlayerMobility.cs" />
  <Reference Include="Unity.TextMeshPro.Editor">
  <HintPath>C:/Users/dddgm/Documents/Unity/Day 1/Library/ScriptAssemblies/Unity.TextMeshPro.Editor.dll</HintPath>

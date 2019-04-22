@@ -29,7 +29,7 @@ public class ChatBoxFunctions : MonoBehaviour
     }
   }
 
-  public void SetMessage( string message)
+  public void SetMessage(string message)
   {
     this.message = message;
   }
