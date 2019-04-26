@@ -15,11 +15,20 @@ EditorBuildSettings:
     path: Assets/Scenes/Day1.unity
     guid: 412359e03fb790248842c969ddec636b
   - enabled: 1
+    path: Assets/Scenes/Transition1.unity
+    guid: 6d771b952dd7d374eabb9645faf09142
+  - enabled: 1
     path: Assets/Scenes/Puzzle2.unity
     guid: 0f2486d53f1b528488f33b8663ff4836
   - enabled: 1
+    path: Assets/Scenes/Puzzle2P2.unity
+    guid: 24bf6c20a9b5a5c438dd8ca8f138188f
+  - enabled: 1
     path: Assets/Scenes/Day2.unity
     guid: af588ecb5c1d70746a95dcd7e947bb1a
+  - enabled: 1
+    path: Assets/Scenes/Transition2.unity
+    guid: 1b22c9ba397c76b49b242ca6797c9d9e
   - enabled: 1
     path: Assets/Scenes/Puzzle3.unity
     guid: f5216257878d13e4dbdbd5ef72946b30

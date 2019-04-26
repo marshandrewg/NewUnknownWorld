@@ -13,6 +13,7 @@ GameObject:
   - component: {fileID: 8093522126130079704}
   - component: {fileID: 8093522126130079705}
   - component: {fileID: 8093522126130079706}
+  - component: {fileID: 415432722}
   m_Layer: 0
   m_Name: Enemy
   m_TagString: enemy
@@ -76,7 +77,7 @@ SpriteRenderer:
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
-  m_Size: {x: 0.96, y: 0.96}
+  m_Size: {x: 0.2, y: 0.2}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
@@ -95,18 +96,18 @@ BoxCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0.0015899613, y: -0.0040573925}
+  m_Offset: {x: 0.003453996, y: -0.00047890842}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
     oldSize: {x: 0.2, y: 0.2}
-    newSize: {x: 0.96, y: 0.96}
+    newSize: {x: 0.2, y: 0.2}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 0.19069691, y: 0.19668996}
+  m_Size: {x: 0.122337736, y: 0.189533}
   m_EdgeRadius: 0
 --- !u!50 &8093522126130079705
 Rigidbody2D:
@@ -143,3 +144,23 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   speed: 3
   xMove: 1
+  anim: {fileID: 415432722}
+--- !u!95 &415432722
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8093522126130079707}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 8a7005e7c3868ca4fb8d4ef43f5faa49, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0

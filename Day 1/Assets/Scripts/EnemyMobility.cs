@@ -7,14 +7,15 @@ public class EnemyMobility : MonoBehaviour
 
     public float speed;
     public float xMove;
-
+    public Animator anim;
 
     // Update is called once per frame
     void Update()
     {
         RaycastHit2D hit = Physics2D.Raycast(transform.position, new Vector2(xMove,0));
         gameObject.GetComponent<Rigidbody2D>().velocity = new Vector2 (xMove, 0) * speed;
-        if(hit.distance < 1.1f){
+        anim.SetFloat("speed", Mathf.Abs(xMove * speed));
+        if(hit.distance < 1f){
           Flip();
           if(hit.collider.tag == "Player"){
             Destroy(hit.collider.gameObject);

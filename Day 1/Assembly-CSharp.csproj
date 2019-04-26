@@ -60,8 +60,12 @@
      <Compile Include="Assets\Scripts\EnemyMobility.cs" />
      <Compile Include="Assets\Scripts\LevelControl.cs" />
      <Compile Include="Assets\Scripts\MessageFunction.cs" />
+     <Compile Include="Assets\Scripts\MuseumFunctions.cs" />
      <Compile Include="Assets\Scripts\NextScreen.cs" />
+     <Compile Include="Assets\Scripts\PaintingFunction.cs" />
+     <Compile Include="Assets\Scripts\PaintingSolver.cs" />
      <Compile Include="Assets\Scripts\PlayerMobility.cs" />
+     <Compile Include="Assets\Scripts\QuizFunctions.cs" />
  <Reference Include="Unity.TextMeshPro.Editor">
  <HintPath>C:/Users/dddgm/Documents/Unity/Day 1/Library/ScriptAssemblies/Unity.TextMeshPro.Editor.dll</HintPath>
  </Reference>

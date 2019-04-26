@@ -6,7 +6,7 @@ using UnityEngine.SceneManagement;
 
 public class CaesarDisplayFunction : MonoBehaviour
 {
-  string answer = "I have your friend at the museum";
+  string answer = "i have your friend at the museum";
   string guess = "";
   bool showing = false;
   bool guessed = false;
@@ -35,7 +35,7 @@ public class CaesarDisplayFunction : MonoBehaviour
       GameObject clone = (GameObject) Instantiate(messagePrefab);
       clone.transform.SetParent(messageParentPanel);
       clone.transform.SetSiblingIndex(messageParentPanel.childCount - 2);
-      if(guess == answer){
+      if(guess.ToLower() == answer){
         clone.GetComponent<MessageFunction>().ShowMessage("Correct");
         SceneManager.LoadScene("Day1");
       }

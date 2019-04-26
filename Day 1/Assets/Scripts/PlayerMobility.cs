@@ -6,9 +6,9 @@ public class PlayerMobility : MonoBehaviour
 {
 
     public float speed;
-    public bool facingRight = false;
     public int jumpPower;
     public bool grounded;
+    public Animator anim;
 
 
 
@@ -27,25 +27,19 @@ public class PlayerMobility : MonoBehaviour
         Jump();
       }
 
-      //Animations
       //Player Direction
-      if(input < 0.0f && facingRight){
-        FlipPlayer();
+      if(input < 0.0f ){
+        GetComponent<SpriteRenderer>().flipX = true;
       }
-      else if(!facingRight && input > 0.0f){
-        FlipPlayer();
+      else if(input > 0.0f){
+        GetComponent<SpriteRenderer>().flipX = false;
       }
       //Physics
       GetComponent<Rigidbody2D>().velocity = new Vector2(input * speed, GetComponent<Rigidbody2D>().velocity.y );
+      anim.SetFloat("speed", Mathf.Abs(input * speed));
+
     }
 
-    void FlipPlayer()
-    {
-      facingRight = !facingRight;
-      Vector2 scale = gameObject.transform.localScale;
-      scale.x *= -1;
-      transform.localScale = scale;
-    }
 
     void Jump()
     {
